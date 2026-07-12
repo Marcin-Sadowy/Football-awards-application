@@ -6,3 +6,5 @@ so it would be more convenient to use and may be a better choice for creating th
 Requires an API key that is provided when signing up. The player stats endpoint costs 39.99$/month
 
 3. https://www.worldcups.ai/data also specifically for world cups (contains data from 1930 onwards), but does not contain advanced stats
+
+4. https://fbref.com/en/comps/1/World-Cup-Stats
