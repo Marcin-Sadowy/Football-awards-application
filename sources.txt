@@ -1,0 +1,8 @@
+1. https://github.com/statsbomb/open-data/blob/master/data - datasets on matches lineup and events - does not have stats for players, we would need to
+calculate the stats through events (events are for example passes, tackles, goals etc.)
+
+2. https://fifa.balldontlie.io/#fifa-world-cup-api - dataset specifically for world cups - provides tables for teams, matches and also player stats,
+so it would be more convenient to use and may be a better choice for creating the first engine prototype. 
+Requires an API key that is provided when signing up. The player stats endpoint costs 39.99$/month
+
+3. https://www.worldcups.ai/data also specifically for world cups (contains data from 1930 onwards), but does not contain advanced stats
