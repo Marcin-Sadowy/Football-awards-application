@@ -8,3 +8,6 @@ Requires an API key that is provided when signing up. The player stats endpoint 
 3. https://www.worldcups.ai/data also specifically for world cups (contains data from 1930 onwards), but does not contain advanced stats
 
 4. https://fbref.com/en/comps/1/World-Cup-Stats
+
+
+https://soccerdata.readthedocs.io/en/latest/intro.html - documentation of python library for scraping football data
