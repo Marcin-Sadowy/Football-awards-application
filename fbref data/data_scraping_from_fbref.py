@@ -1,4 +1,5 @@
 import soccerdata as sd
+import pandas as pd
 
 world_cup_stats = sd.FBref(leagues='INT-World Cup', seasons=2026, headless=False)
 
@@ -12,4 +13,7 @@ for id in schedule['game_id']:
 
     all_match_stats.append(player_match_stats)
 
-print(len(all_match_stats))
+stats_csv = pd.concat(all_match_stats)
+stats_csv.to_csv("world_cup_stats.csv")
+
+print(all_match_stats[-1])

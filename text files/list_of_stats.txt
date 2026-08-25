@@ -1,0 +1,24 @@
+1. Shirt number
+2. Position
+3. Age
+4. Minutes played
+5. Goals
+6. Assists
+7. Expected Goals
+8. Expected Assists
+9. Penalty Kicks scored
+10. Penalty Kicks attempted
+11. Shots total
+12. Shots on target
+13. Key passes
+14. Accurate passes (as percentage of total passes)
+15. Accurate long passes (as percentage of total long passes)
+16. Covered distance
+17. Top speed
+18. Successful dribbles (as percentage of total dribbles)
+19. Fouls Drawn
+20. Fouls commited
+21. Interceptions
+22. Lost possesion
+23. Yellow Cards
+24. Red Cards
