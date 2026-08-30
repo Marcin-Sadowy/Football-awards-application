@@ -11,6 +11,9 @@ lineups_directory = base_dir / 'lineups'
 
 #Create dictionary for lineups. It will be in the form {match id : [list of players]}
 lineups = {}
+#Create a dictionary for stats in the form (match id: all players' stats)
+stats = {}
+#Create a dictionary for player_ids in the form (player id : name)
 player_ids = {}
 #Read the match ids we extracted in the extract_match_ids file
 match_ids = []
@@ -25,9 +28,6 @@ base_url = 'https://www.sofascore.com/api/v1/event'
 
 options = webdriver.ChromeOptions()
 
-options.set_capability(
-    'goog:loggingPrefs', {'performance' : 'ALL', 'browser' : 'ALL'}
-)
 
 driver = webdriver.Chrome(options=options)
 
@@ -35,31 +35,44 @@ for id in match_ids:
     
         try:
             driver.get(f'{base_url}/{id}/lineups')
+            
             json_text = driver.find_element('tag name', 'pre').text
+
             data = json.loads(json_text)
-            
+
             lineup = []
-            file_path = lineups_directory / f'{id}.txt'
-            
-            with open(file_path, 'w') as file:
-                for player in data['home']['players']:
-            
+            match_stats = []
+
+            for team in ['home', 'away']:
+                for player in data[team]['players']:
+
+                
                     player_id = player['player']['id']
                     player_name = player['player']['name']
-            
+                
                     lineup.append(player_id)
                     player_ids[player_id] = player_name
-            
-                    file.write(json.dumps(player['player']['statistics'], indent=2))
-                    file.write('\n')
-            
-                    lineups[id] = lineup
+                    match_stats.append(player_id)
+                
+                    player_stats = player['statistics']
+                    match_stats.append(player_stats)
 
-        except:
-            print(f"Failed for match id: {id}")
+            lineups[id] = lineup
+            stats[id] = match_stats
+
+        except Exception as e:
+            print(f"Failed for match id: {id} : {e}")
 
         
-
+#Write name-id pairs for all player
 with open('player_ids.txt', 'w', encoding='utf-8') as f:
     for id, name in player_ids.items():
         f.write(f'{id} : {name}\n')
+
+#Create a file from each match containing player stats from that match
+for match_id, match_stats in stats.items():
+
+    file_path = lineups_directory / f'{match_id}.txt'
+
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(match_stats, file, indent=2)
