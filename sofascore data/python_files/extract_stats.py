@@ -4,9 +4,10 @@ from pathlib import Path
 
 #Directories for file opening and saving
 
-base_dir = Path(__file__).resolve().parent
+base_dir = Path(__file__).resolve().parent.parent
 match_ids_file = base_dir / 'match_ids.txt'
-lineups_directory = base_dir / 'lineups'
+stats_directory = base_dir / 'stats'
+player_ids_directory = base_dir / 'match and player tables'
 
 
 #Create dictionary for lineups. It will be in the form {match id : [list of players]}
@@ -72,7 +73,7 @@ with open('player_ids.txt', 'w', encoding='utf-8') as f:
 #Create a file from each match containing player stats from that match
 for match_id, match_stats in stats.items():
 
-    file_path = lineups_directory / f'{match_id}.txt'
+    file_path = stats_directory / f'{match_id}.txt'
 
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(match_stats, file, indent=2)

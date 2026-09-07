@@ -32,7 +32,9 @@ with open("match_ids.txt", 'w') as f:
         for event in data['events']:
             f.write(str(event['id']) + '\n') #extract only the match_ids
 
-        if not data['hasNextPage']: #when we reach the beginning, end the loo[]
+
+
+        if not data['hasNextPage']: #when we reach the beginning, end the loop[]
             break
 
         page+=1
