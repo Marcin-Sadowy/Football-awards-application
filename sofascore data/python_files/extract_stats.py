@@ -67,8 +67,9 @@ for id in match_ids:
         
 #Write name-id pairs for all player
 with open(player_ids_directory/'player_ids.txt', 'w', encoding='utf-8') as f:
+    f.write('Player_id Player_name')
     for id, name in player_ids.items():
-        f.write(f'{id} : {name}\n')
+        f.write(f'{id} {name}\n')
 
 #Create a file from each match containing player stats from that match
 for match_id, match_stats in stats.items():
@@ -76,4 +77,4 @@ for match_id, match_stats in stats.items():
     file_path = stats_directory / f'{match_id}.txt'
 
     with open(file_path, 'w', encoding='utf-8') as file:
-        json.dump(match_stats, file, indent=2)
+        json.dump(match_stats, file, indent=2) #we have to change something there in order for the structure of the stats to be better for database use
