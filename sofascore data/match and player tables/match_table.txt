@@ -1,7 +1,7 @@
 Match_id Team1 Team2
 12813014 Germany Paraguay
 12812998 Netherlands Morocco
-12812989 C魌e d'Ivoire Norway
+12812989 C么te d'Ivoire Norway
 12812995 France Sweden
 12813001 Mexico Ecuador
 12813020 England DR Congo
@@ -39,12 +39,12 @@ Match_id Team1 Team2
 15186861 Scotland Brazil
 15186744 South Africa South Korea
 15186732 Czechia Mexico
-15186908 Cura鏰o C魌e d'Ivoire
+15186908 Cura莽ao C么te d'Ivoire
 15186907 Ecuador Germany
 15186972 Japan Sweden
 15186973 Tunisia Netherlands
 15186891 Paraguay Australia
-15186887 T黵kiye USA
+15186887 T眉rkiye USA
 15186771 Senegal Iraq
 15186537 Norway France
 15186803 Cabo Verde Saudi Arabia
@@ -76,10 +76,10 @@ Match_id Team1 Team2
 15186878 USA Australia
 15186859 Scotland Morocco
 15186856 Brazil Haiti
-15186879 T黵kiye Paraguay
+15186879 T眉rkiye Paraguay
 15186957 Netherlands Sweden
-15186905 Germany C魌e d'Ivoire
-15186906 Ecuador Cura鏰o
+15186905 Germany C么te d'Ivoire
+15186906 Ecuador Cura莽ao
 15186963 Tunisia Japan
 15186840 Spain Saudi Arabia
 15186499 Belgium Iran
@@ -96,10 +96,10 @@ Match_id Team1 Team2
 15186526 Qatar Switzerland
 15186850 Brazil Morocco
 15186853 Haiti Scotland
-15186874 Australia T黵kiye
-15186899 Germany Cura鏰o
+15186874 Australia T眉rkiye
+15186899 Germany Cura莽ao
 15186945 Netherlands Japan
-15186904 C魌e d'Ivoire Ecuador
+15186904 C么te d'Ivoire Ecuador
 15186951 Sweden Tunisia
 15186783 Spain Cabo Verde
 15186837 Belgium Egypt

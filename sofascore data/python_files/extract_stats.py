@@ -66,7 +66,7 @@ for id in match_ids:
 
         
 #Write name-id pairs for all player
-with open('player_ids.txt', 'w', encoding='utf-8') as f:
+with open(player_ids_directory/'player_ids.txt', 'w', encoding='utf-8') as f:
     for id, name in player_ids.items():
         f.write(f'{id} : {name}\n')
 

@@ -1626,7 +1626,23 @@
       "statisticsType": "player"
     }
   },
+  1138352,
+  {
+    "totalShots": 0,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
   904424,
+  {
+    "totalShots": 0,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  1202024,
   {
     "totalShots": 0,
     "statisticsType": {
@@ -1642,23 +1658,7 @@
       "statisticsType": "player"
     }
   },
-  1138352,
-  {
-    "totalShots": 0,
-    "statisticsType": {
-      "sportSlug": "football",
-      "statisticsType": "player"
-    }
-  },
   1019442,
-  {
-    "totalShots": 0,
-    "statisticsType": {
-      "sportSlug": "football",
-      "statisticsType": "player"
-    }
-  },
-  1202024,
   {
     "totalShots": 0,
     "statisticsType": {

@@ -1672,6 +1672,14 @@
       "statisticsType": "player"
     }
   },
+  1126368,
+  {
+    "totalShots": 0,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
   1544387,
   {
     "totalShots": 0,
@@ -1681,14 +1689,6 @@
     }
   },
   884301,
-  {
-    "totalShots": 0,
-    "statisticsType": {
-      "sportSlug": "football",
-      "statisticsType": "player"
-    }
-  },
-  1126368,
   {
     "totalShots": 0,
     "statisticsType": {

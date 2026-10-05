@@ -1470,40 +1470,6 @@
       "statisticsType": "player"
     }
   },
-  846061,
-  {
-    "totalPass": 2,
-    "accuratePass": 2,
-    "goalAssist": 0,
-    "accurateOwnHalfPasses": 1,
-    "totalOwnHalfPasses": 1,
-    "accurateOppositionHalfPasses": 1,
-    "totalOppositionHalfPasses": 1,
-    "duelWon": 1,
-    "ballRecovery": 1,
-    "wasFouled": 1,
-    "minutesPlayed": 19,
-    "touches": 3,
-    "rating": 6.6,
-    "expectedAssists": 0.00059367,
-    "topSpeed": 26.71,
-    "kilometersCovered": 2.27,
-    "numberOfSprints": 2,
-    "ratingVersions": {
-      "original": 6.6,
-      "alternative": 6.5
-    },
-    "totalShots": 0,
-    "passValueNormalized": 0.01,
-    "defensiveValueNormalized": 0.13,
-    "metersCoveredRunningKm": 0.3,
-    "metersCoveredHighSpeedRunningKm": 0.15,
-    "metersCoveredSprintingKm": 0.02,
-    "statisticsType": {
-      "sportSlug": "football",
-      "statisticsType": "player"
-    }
-  },
   1202024,
   {
     "totalPass": 7,
@@ -1548,6 +1514,40 @@
     "metersCoveredRunningKm": 0.38,
     "metersCoveredHighSpeedRunningKm": 0.18,
     "metersCoveredSprintingKm": 0.04,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
+  846061,
+  {
+    "totalPass": 2,
+    "accuratePass": 2,
+    "goalAssist": 0,
+    "accurateOwnHalfPasses": 1,
+    "totalOwnHalfPasses": 1,
+    "accurateOppositionHalfPasses": 1,
+    "totalOppositionHalfPasses": 1,
+    "duelWon": 1,
+    "ballRecovery": 1,
+    "wasFouled": 1,
+    "minutesPlayed": 19,
+    "touches": 3,
+    "rating": 6.6,
+    "expectedAssists": 0.00059367,
+    "topSpeed": 26.71,
+    "kilometersCovered": 2.27,
+    "numberOfSprints": 2,
+    "ratingVersions": {
+      "original": 6.6,
+      "alternative": 6.5
+    },
+    "totalShots": 0,
+    "passValueNormalized": 0.01,
+    "defensiveValueNormalized": 0.13,
+    "metersCoveredRunningKm": 0.3,
+    "metersCoveredHighSpeedRunningKm": 0.15,
+    "metersCoveredSprintingKm": 0.02,
     "statisticsType": {
       "sportSlug": "football",
       "statisticsType": "player"
@@ -1642,6 +1642,14 @@
       "statisticsType": "player"
     }
   },
+  1138352,
+  {
+    "totalShots": 0,
+    "statisticsType": {
+      "sportSlug": "football",
+      "statisticsType": "player"
+    }
+  },
   1477662,
   {
     "totalShots": 0,
@@ -1651,14 +1659,6 @@
     }
   },
   783374,
-  {
-    "totalShots": 0,
-    "statisticsType": {
-      "sportSlug": "football",
-      "statisticsType": "player"
-    }
-  },
-  1138352,
   {
     "totalShots": 0,
     "statisticsType": {

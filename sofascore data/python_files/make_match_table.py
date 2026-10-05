@@ -34,7 +34,7 @@ options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(options=options)
 
 #Make the table file
-with open('match_table.txt', 'w') as match_table:
+with open(match_table_path/'match_table.txt', 'w', encoding='utf-8') as match_table:
 
     match_table.write('Match_id Team1 Team2\n')
 
@@ -53,11 +53,12 @@ with open('match_table.txt', 'w') as match_table:
             team_1 = data['event']['homeTeam']['name']
             team_2 = data['event']['awayTeam']['name']
 
+
+
             match_table.write(f'{id} {team_1} {team_2}\n')
         
         except Exception as e:
             print(f"Extracting failed for id: {id}, {e}")
-
 
 
 
