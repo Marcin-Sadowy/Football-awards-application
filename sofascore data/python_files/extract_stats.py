@@ -6,18 +6,21 @@ from pathlib import Path
 
 base_dir = Path(__file__).resolve().parent.parent
 match_ids_file = base_dir / 'match_ids.txt'
-stats_directory = base_dir / 'stats'
+stats_directory = base_dir / 'raw_stats'
 player_ids_directory = base_dir / 'match and player tables'
 
 
-#Create dictionary for lineups. It will be in the form {match id : [list of players]}
-lineups = {}
+
 #Create a dictionary for stats in the form (match id: all players' stats)
 stats = {}
 #Create a dictionary for player_ids in the form (player id : name)
 player_ids = {}
 #Read the match ids we extracted in the extract_match_ids file
 match_ids = []
+
+player_stats_csv = ''
+goalkeeper_stats_csv = ''
+
 
 with open(match_ids_file, 'r') as f:
     for match_id in f:
@@ -41,24 +44,56 @@ for id in match_ids:
 
             data = json.loads(json_text)
 
-            lineup = []
             match_stats = []
 
             for team in ['home', 'away']:
                 for player in data[team]['players']:
 
-                
                     player_id = player['player']['id']
                     player_name = player['player']['name']
-                
-                    lineup.append(player_id)
                     player_ids[player_id] = player_name
+
+
+                    player_stats = player['statistics']
+
+                    if 'saves' in player_stats.keys():
+
+                        if goalkeeper_stats_csv == '':
+
+                            goalkeeper_stats_csv += 'match_id player_id '
+                            for key in player_stats.keys():
+                                if key != 'ratingVersions' and key != 'statisticsType':
+                                    goalkeeper_stats_csv += key + ' '
+                            goalkeeper_stats_csv += '\n'
+
+                        goalkeeper_stats_csv += str(id) + ' ' + str(player_id) + ' '
+                        for value in player_stats.values():
+                            if not isinstance(value, dict):
+                                goalkeeper_stats_csv += str(value) + ' '
+
+                    else:
+
+                        if player_stats_csv == '':
+                            player_stats_csv += 'match_id player_id '
+                            for key in player_stats.keys():
+                                if key != 'ratingVersions' and key != 'statisticsType':
+                                    player_stats_csv += key + ' '
+                            player_stats_csv += '\n'
+
+                        player_stats_csv += str(id) + ' ' + str(player_id) + ' '
+                        for value in player_stats.values():
+
+                            if not isinstance(value, dict):
+                                player_stats_csv += str(value) + ' '
+
+
+
+
                     match_stats.append(player_id)
                 
-                    player_stats = player['statistics']
+                    
                     match_stats.append(player_stats)
 
-            lineups[id] = lineup
             stats[id] = match_stats
 
         except Exception as e:
@@ -78,3 +113,9 @@ for match_id, match_stats in stats.items():
 
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(match_stats, file, indent=2) #we have to change something there in order for the structure of the stats to be better for database use
+
+with open('goalkeeper_stats.txt' , 'w', encoding='utf-8') as file:
+    file.write(goalkeeper_stats_csv)
+
+with open('player_stats.txt' , 'w', encoding='utf-8') as file:
+    file.write(player_stats_csv)
