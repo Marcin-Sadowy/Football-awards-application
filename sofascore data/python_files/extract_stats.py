@@ -70,6 +70,7 @@ for id in match_ids:
                         for value in player_stats.values():
                             if not isinstance(value, dict):
                                 goalkeeper_stats_csv += str(value) + ' '
+                        goalkeeper_stats_csv += '\n'
 
                     else:
 
@@ -85,6 +86,8 @@ for id in match_ids:
 
                             if not isinstance(value, dict):
                                 player_stats_csv += str(value) + ' '
+                        player_stats_csv += '\n'
+                            
 
 
 

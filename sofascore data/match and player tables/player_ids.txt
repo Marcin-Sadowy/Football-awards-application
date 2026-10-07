@@ -1124,3 +1124,125 @@ Player_id Player_name8959 Manuel Neuer
 826242 Ala'a Al-Hejji
 976538 Khalid Al-Ghannam
 818779 Saleh Al-Shehri
+28381 Fernando Muslera
+311456 Guillermo Varela
+924889 Sebastián Cáceres
+805078 Mathías Olivera
+874568 Juan Sanabria
+846425 Manuel Ugarte
+846413 Agustín Canobbio
+791190 Rodrigo Bentancur
+831808 Federico Valverde
+929193 Maximiliano Araújo
+924871 Darwin Núñez
+877513 Nicolás de la Cruz
+581060 Sergio Rochet
+976104 Federico Viñas
+932233 Brian Rodríguez
+846421 Santiago Mele
+875295 Matías Viña
+846308 Santiago Bueno
+325355 José María Giménez
+925097 Ronald Araújo
+881110 Joaquín Piquerez
+973533 Emiliano Martínez
+333587 Giorgian de Arrascaeta
+989803 Facundo Pellistri
+155974 Rodrigo Aguirre
+966575 Rodrigo Zalazar
+197904 Max Crocombe
+155882 Tim Payne
+1167100 Finn Surman
+1514870 Tyler Bindon
+905264 Liberato Cacace
+822749 Joe Bell
+1002620 Marko Stamenić
+822743 Sarpreet Singh
+333571 Ryan Thomas
+905267 Elijah Just
+50480 Chris Wood
+1002506 Jesse Randall
+1122425 Benjamin Old
+38624 Michael Boxall
+822753 Callum McCowatt
+867714 Francis De Vries
+822737 Michael Woud
+1000379 Alex Paulsen
+982371 Nando Pijnaker
+38111 Tommy Smith
+959750 Callan Elliot
+356256 Alex Rufer
+1414979 Lachlan Bayliss
+813840 Logan Rogerson
+31857 Kosta Barbarouses
+944481 Ben Waine
+926506 Mohamed Abdelmonem
+880622 Ahmed Fatouh
+791374 Alireza Beiranvand
+786133 Ramin Rezaeian
+812952 Hossein Kanaani
+223340 Shoja Khalilzadeh
+932486 Ali Nemati
+812531 Milad Mohammadi
+548050 Saman Ghoddos
+1171024 Mohammad Ghorbani
+359334 Saeid Ezatolahi
+996805 Mohammad Mohebi
+812533 Mehdi Taremi
+1836024 Saleh Hardani
+993899 Shahriar Moghanlou
+331837 Alireza Jahanbakhsh
+932221 Payam Niazmand
+328769 Hossein Hosseini
+1196902 Ehsan Hajsafi
+1170977 Aria Yousefi
+1464876 Danial Eiri
+828230 Roozbeh Cheshmi
+812953 Mahdi Torabi
+1500737 Amirmohammad Razzaghinia
+881182 Mehdi Ghayedi
+791368 Ali Alipour
+905472 Amirhossein Hosseinzadeh
+812797 Dennis Eckert Ayensa
+1177807 Ahmed Nadhir Benbouali
+828294 Yazeed Abu Laila
+1114497 Abdallah Nasib
+888906 Yazan Al-Arab
+1122369 Husam Ali Mohammad Abudahab
+812997 Ehsan Haddad
+1014324 Nizar Al-Rashdan
+927845 Noor Al-Rawabdeh
+1114775 Mohannad Abu Taha
+1457997 Ali Al Azaizeh
+980728 Ali Olwan
+1937497 Odeh Fakhoury
+812557 Mahmoud Al-Mardi
+876600 Mousa Tamari
+1019495 Amer Jamous
+980664 Saleem Obaid
+986341 Mohammad Abu Zrayq
+974747 Abdallah Al-Fakhouri
+954107 Noureddin Zaid
+2239188 Anas Badawi
+1158813 Mo Abualnadi
+1139989 Mohammad Ali Hasheesh
+920476 Saad Al Rousan
+2048339 Mohammad Abu Ghoush
+997817 Ibrahim Sadeh
+786034 Mohammad Al Daoud
+786030 Rajaei Ayed
+881117 Teboho Mokoena
+880218 Takefusa Kubo
+845074 Edouard Mendy
+1107591 Mohamed Amoura
+1134351 Ismael Koné
+933433 Homam Al-Amin
+796500 Assim Madibo
+790171 Cristian Roldán
+907217 Jacob Italiano
+122570 Mathew Leckie
+940871 Nico Schlotterbeck
+2018238 Adem Arous
+1391526 Moutaz Neffati
+559504 Themba Zwane
+1030711 David Jurásek
