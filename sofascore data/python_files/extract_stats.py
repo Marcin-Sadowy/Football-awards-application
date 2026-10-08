@@ -56,37 +56,39 @@ for id in match_ids:
 
                     player_stats = player['statistics']
 
-                    if 'saves' in player_stats.keys():
+                    if len(player_stats.keys()) > 3:
 
-                        if goalkeeper_stats_csv == '':
+                        if 'saves' in player_stats.keys():
 
-                            goalkeeper_stats_csv += 'match_id player_id '
-                            for key in player_stats.keys():
-                                if key != 'ratingVersions' and key != 'statisticsType':
-                                    goalkeeper_stats_csv += key + ' '
+                            if goalkeeper_stats_csv == '':
+
+                                goalkeeper_stats_csv += 'match_id player_id '
+                                for key in player_stats.keys():
+                                    if key != 'ratingVersions' and key != 'statisticsType':
+                                        goalkeeper_stats_csv += key + ' '
+                                goalkeeper_stats_csv += '\n'
+
+                            goalkeeper_stats_csv += str(id) + ' ' + str(player_id) + ' '
+                            for value in player_stats.values():
+                                if not isinstance(value, dict):
+                                    goalkeeper_stats_csv += str(value) + ' '
                             goalkeeper_stats_csv += '\n'
 
-                        goalkeeper_stats_csv += str(id) + ' ' + str(player_id) + ' '
-                        for value in player_stats.values():
-                            if not isinstance(value, dict):
-                                goalkeeper_stats_csv += str(value) + ' '
-                        goalkeeper_stats_csv += '\n'
+                        else:
 
-                    else:
+                            if player_stats_csv == '':
+                                player_stats_csv += 'match_id player_id '
+                                for key in player_stats.keys():
+                                    if key != 'ratingVersions' and key != 'statisticsType':
+                                        player_stats_csv += key + ' '
+                                player_stats_csv += '\n'
 
-                        if player_stats_csv == '':
-                            player_stats_csv += 'match_id player_id '
-                            for key in player_stats.keys():
-                                if key != 'ratingVersions' and key != 'statisticsType':
-                                    player_stats_csv += key + ' '
+                            player_stats_csv += str(id) + ' ' + str(player_id) + ' '
+                            for value in player_stats.values():
+
+                                if not isinstance(value, dict):
+                                    player_stats_csv += str(value) + ' '
                             player_stats_csv += '\n'
-
-                        player_stats_csv += str(id) + ' ' + str(player_id) + ' '
-                        for value in player_stats.values():
-
-                            if not isinstance(value, dict):
-                                player_stats_csv += str(value) + ' '
-                        player_stats_csv += '\n'
                             
 
 
